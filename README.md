@@ -1,4 +1,4 @@
-🛒 Sistema de Ventas (Dockerizado)
+🛒 Sistema de Ventas.
 
 Descripción
 Este proyecto corresponde al desarrollo de un sistema de ventas básico utilizando una arquitectura de tres capas, completamente dockerizada. El sistema permite gestionar clientes y productos mediante operaciones CRUD (crear, listar, actualizar y eliminar).Docker permite ejecutar cada componente del sistema en contenedores independientes, facilitando la portabilidad, el despliegue y la integración entre servicios como backend, frontend y base de datos.
@@ -51,14 +51,15 @@ Databases → (ventas_db) → Schemas → public → Tables, donde se visualizan
 
 Pruebas realizadas.
 Durante el desarrollo se validaron las siguientes funcionalidades:
-✔ Creación de productos
-✔ Edición de productos
-✔ Eliminación de productos
-✔ Listado de productos
+- Creación de productos
+- Edición de productos
+- Eliminación de productos
+- Listado de productos
 El sistema responde correctamente a todas las operaciones realizadas desde el frontend.
- Autores:
-Daniel Alejandro Marulanda 
-Maria Fernanda Narvaez
+
+Autores:
+Daniel Alejandro Marulanda
+Maria Fernanda Narvaez.
 
 Conclusión
 Se logró implementar un sistema de ventas funcional utilizando una arquitectura de tres capas y contenedores Docker; esta permitió integrar de forma eficiente el frontend, backend y la base de datos, facilitando el despliegue del sistema en cualquier entorno. Además, se comprobó el correcto funcionamiento de todas las operaciones CRUD, evidenciando la comunicación entre los servicios.

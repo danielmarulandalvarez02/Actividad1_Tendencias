@@ -38,4 +38,4 @@ Acceso a:localhost:5000/productos
 
 
  4. Frontend funcionando
-Acceso a: http://localhost:3000/
+Acceso a: http://localhost:3000/  .

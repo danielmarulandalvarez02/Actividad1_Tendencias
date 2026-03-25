@@ -1,0 +1,56 @@
+
+services:
+
+  db:
+    image: postgres:15
+    container_name: postgres-db
+    env_file: .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./app/init-db:/docker-entrypoint-initdb.d
+    networks:
+      - red_interna
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      retries: 5
+
+  web:
+    build: ./app
+    container_name: flask-api
+    env_file: .env
+    ports:
+      - "5000:5000"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - red_interna
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    env_file: .env
+    ports:
+      - "8080:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - red_interna
+
+  frontend:
+    build: ./frontend
+    container_name: nginx-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - web
+    networks:
+      - red_interna
+
+volumes:
+  postgres_data:
+
+networks:
+  red_interna:

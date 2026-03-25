@@ -58,7 +58,7 @@ Durante el desarrollo se validaron las siguientes funcionalidades:
 El sistema responde correctamente a todas las operaciones realizadas desde el frontend.
 
 Autores:
-Daniel Alejandro Marulanda
+Daniel Alejandro Marulanda-
 Maria Fernanda Narvaez.
 
 Conclusión

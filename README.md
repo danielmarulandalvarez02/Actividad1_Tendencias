@@ -42,23 +42,21 @@ Acceso a: http://localhost:3000/
 
 4. pgAdmin conectado a la base de datos
 Se accede a: http://localhost:8080
-
-Iniciar sesión con las credenciales definidas en el .env
-Conectarse al servidor PostgreSQL, con el host, usuario y contraseña.
+-Iniciar sesión con las credenciales definidas en el .env
+-Conectarse al servidor PostgreSQL, con el host, usuario y contraseña.
 Finalmente, se accede a:
 Databases → (ventas_db) → Schemas → public → Tables, donde se visualizan las tablas creadas
 <img width="1423" height="826" alt="5" src="https://github.com/user-attachments/assets/423d43cf-86dd-41c9-9bad-42b00b2a3f4a" />
 
 Pruebas realizadas.
 Durante el desarrollo se validaron las siguientes funcionalidades:
-- Creación de productos
-- Edición de productos
-- Eliminación de productos
-- Listado de productos
-El sistema responde correctamente a todas las operaciones realizadas desde el frontend.
+- Creación de productos.
+- Edición de productos.
+- Eliminación de productos.
+- Listado de productos.
 
 Autores:
-Daniel Alejandro Marulanda-
+Daniel Alejandro Marulanda -
 Maria Fernanda Narvaez.
 
 Conclusión
